@@ -7,8 +7,8 @@
 > Powerful Automation Stack and Cloud native product
 
 - opensource RPA
-- powerful automation ability for variety application and browser 
-- friendly development tools
+- powerful automation for various applications and browsers 
+- user-friendly development tools
 
 [GitHub](https://github.com/clickcorp/clicknium-docs)
 [Getting Started](./doc/gettingstart.md)

@@ -44,36 +44,35 @@ If the mouse moves on Microsoft Edge, it will use Edge technology to locate the 
 If themouse moves on Firefox, it will use Firefox technology to locate the element;   
 If mouse moves on Sap windows GUI, it will use SAP technology to locate the element
 
-Advanced Option: default is None, when you choose `XPath`, it will come into effect on web automation technology(IE, Chrome, Edge, Firefox).
-When capturing the element, it will generate locator in XPath style.
+Advanced Option: default is None, when you choose `XPath`, it will immediately affect on web automation technology (IE, Chrome, Edge, Firefox) while capturing the element, and generate locator in XPath style.
 
-Cursor Position(X,Y): indicate current mouse postion in screen
+Cursor Position(X,Y): current mouse postion on the screen
 
-After invoke Clicknium Recorder, you can move mouse on the target applicaiton, it will highlight the element recognized, 
-if you want to capture the element, press `Ctrl` and click, the element locator will be added.
+After invoking Clicknium Recorder, it will highlight the element recognized by moving the mouse to the target application. 
+If you want to capture the element, press `Ctrl` and click to add  the element locator.
 
 ![clicknium recorder](../img/record1.gif) 
 
 ## Edit and Validate Locator
-After record the locators, you can open and edit the locator  
+After recording the locators, you can open and edit the locator.  
 ![clicknium vscode](../img/main.png) 
 
-- locator store: file to store locator data. the locators of the same application are stored in one locator store defaultly, user can manage the locator store from Visual Studio Code or Clicnium Recorder.
-- locator: Ui element locator, locator is string(XML fragment) that used to find the element, it includes application info, includes all necessary parent nodes of the element in the user interface, and using several attributes to identify each node include element itself.
-- Screenshot: during record the element, we will store the screenshot together with the locator
-- Attributes: user can select/deselect or edit the value of each attribute
+- locator store: the file to store locator data. The locators of the same application are stored in one locator store by default. Users can manage the locator store in Visual Studio Code or Clicnium Recorder.
+- locator: UI element locator, the string(XML fragment) that used to find the element including application information and all necessary parent nodes of the UI element, and  attributes of each element itself.
+- Screenshot: While recording the elements, store the screenshot together with the locator
+- Attributes: Users can select/deselect or edit the value of each attribute.
 
-More about locator, please refer to [clicknium locator](./doc/automation/locator.md)
+More about the locator, please refer to [clicknium locator](./doc/automation/locator.md)
 
-After edit locator, you can press `Validate` button to verify, it will minimize Visual Studio Code and highlight the found element, if not found, will show detail error.
+After editing the locator, you can press button`Validate`, it will minimize Visual Studio Code and highlight the found element. If not found, it will show detailed errors.
 ![validate error](../img/validate_err.png)
 
 ## Writing code
 - Auto Code Complete
-when you write code, need pass locator as parameter, for example, `cc.find_element(`, you can press `Ctrl`+F10, invoke clicknium recorder, and capture element, return back to Visual Studio Code, the captured element will be auto filled like `cc.find_element(locator.chrome.bing.search_sb_form_q)`
+Set the locator as the parameter, for example, `cc.find_element(`, you can press `Ctrl`+F10 to invoke Clicknium Recorder and capture the elements. Return to Visual Studio Code, the captured element will be automatically filled like `cc.find_element(locator.chrome.bing.search_sb_form_q)`
 
 - IntelliSense
-You can select one locator already in locator store, clicknium code extension can help you to show locator store list and locator list  
+If you want to choose one locator in the locator store, Clicknium code extension can show you the locator store list and the locator list.  
 ![intellisense](../img/intelliSense.png)
 
 ## Run/Debug Project
