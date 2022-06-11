@@ -11,13 +11,11 @@
 
 ## Overview
 For python developer, if you use Visual Studio Code, ClickCorp provides clicknium extension that include all RPA features. 
-With our extension for Visual Studio Code, you can create python automation project; capture ui elements in web browsers 
-and variety desktop applications, easy to edit ui locator, validate or recapture; run/debug the automation project, and 
-centeral locator store managerment on cloud. Besides these features, we also improve writing code experience, 
-can do IntelliSense, error hint etc.
+With the extension for Visual Studio Code, you can create python automation project, capture UI elements in browsers and in various desktop applications, easily edit UI locator, validate or recapture, run/debug the automation project, and provide centeral locator store management on the cloud.
+ Besides, Clicknium also improves writing code experience, such as providing IntelliSense, error hint, etc.
 
 ***Installation​***: Install through VS marketplace `Clicknium VS Code extension` or search clicknium in Visual Studio Code.  
-***Remarks***: Clicknium extension is completely free, developer can use all features in Visual Studio Code.
+***Remarks***: As Clicknium extension is completely free, developers can use all features in Visual Studio Code.
 
 ## Create Project
 
@@ -25,29 +23,29 @@ can do IntelliSense, error hint etc.
 [Automation Extensions](./doc/developtools/extensions/extensions.md)
 
 ## Record UI Locators
-In Visual Studio Code, press `CTRL+F10` can invoke clicknium recorder and minimize current Visual Studio Code window,  
+In Visual Studio Code, press `CTRL+F10` to invoke Clicknium recorder and minimize current Visual Studio Code window.  
 ![clicknium recorder](../img/recorder_main.png)  
-Capture Technology: indicate which automation technology current using to capture ui element, we support several automation tech:
-- UIA： Leverage Microsoft UI Automation, it is used for most windows application such as win32, winform, WPF application and so on
+The capture technology indicates which automation technology currently used to capture UI elements. The supporting automation technology are as follows:
+- UIA： Leverage Microsoft UI Automation, used for most windows application such as win32, winform, WPF application and so on
 - IA: based on MSAA (Microsoft Active Accessibility)
-- Java: automation for java application, support JRE version about 1.6
-- IE: automation for Internet Explorer, support version above 5.5 
-- Chrome: automation for chrome, need install chrome extension first, support version above 60
-- Edge: automation for edge, need install msedge extension first
-- Firefox: automation for firefox, need install firefox extension first, support version above 56
-- Sap: automation for sap wingui, need enable SAP GUI Scripting setting first 
+- Java: automation for Java application, supporting JRE version above 1.6
+- IE: automation for Internet Explorer, supporting version above 5.5 
+- Chrome: automation for Chrome ,installation of chrome extension is need at first, supporting version above 60
+- Edge: automation for Edge, installation of Edge extension is needed at first
+- Firefox: automation for Firefox, installation of Firefox extension is needed at first, supporting version above 56
+- SAP: automation for SAP WinGUI, SAP GUI Scripting setting is enabled at first 
   
-Default is ***Auto Detect*** which means clicknium recorder automatically select rechnology:  
-if mouse moves on windows applicaiton, it will use UIA technology to locate element;   
-if mouse moves on java applicaiton, it will use Java technology to locate element;   
-if mouse moves on Internet explorer, it will use IE technology to locate element;   
-if mouse moves on Chrome, it will use Chrome technology to locate element;   
-if mouse moves on Microsoft Edge, it will use Edge technology to locate element;   
-if mouse moves on Firefox, it will use Firefox technology to locate element;   
-if mouse moves on Sap windows GUI, it will use Sap technology to locate element
+Default is ***Auto Detect***, which means clicknium recorder automatically select the technology:  
+If the mouse moves on Windows applicaiton, it will use UIA technology to locate the element;   
+If the mouse moves on Java applicaiton, it will use Java technology to locate the element;   
+If the mouse moves on Internet explorer, it will use IE technology to locate the element;   
+If the mouse moves on Chrome, it will use Chrome technology to the locate element;   
+If the mouse moves on Microsoft Edge, it will use Edge technology to locate the element;   
+If themouse moves on Firefox, it will use Firefox technology to locate the element;   
+If mouse moves on Sap windows GUI, it will use SAP technology to locate the element
 
-Advanced Option: default is None, you can choose `XPath`, it will take affect on web automation technology(IE, Chrome, Edge, Firefox), 
-when capture element, will generate locator in XPath style.
+Advanced Option: default is None, when you choose `XPath`, it will come into effect on web automation technology(IE, Chrome, Edge, Firefox).
+When capturing the element, it will generate locator in XPath style.
 
 Cursor Position(X,Y): indicate current mouse postion in screen
 
