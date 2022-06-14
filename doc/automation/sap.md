@@ -7,7 +7,7 @@
 
 ## Overview
 SAP WinGUI is commonly used to access SAP functionality in SAP applications.
-Clicknium automation stack supports automation for SAP WinGUI enabling SAP WinGUI API scripting.
+Clicknium supports SAP WinGUI automation, and it requires the SAP WinGUI API scripting enabled.
 
 The  version 7.4 ,7.5 and 7.6 of SAP WinGUI are supported.
 

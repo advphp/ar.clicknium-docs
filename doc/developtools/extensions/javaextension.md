@@ -7,7 +7,7 @@
 > For applications opened with Java 9+ JRE:
 >- Prior to Java 9, JRE included the attach module, which Java Extension relies on to automate Java applications.
 >- For Java 9+, the attach module is only included in JDK. For applications opened with JRE9+, you need to manually add this module under JRE directory.
->- Before installing the extension, you may asked to close all Java applications.
+>- Before installing the extension, please close all Java applications.
 
 ## Install
 

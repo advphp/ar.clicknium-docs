@@ -6,7 +6,7 @@
     - [Windows application Example](#windows-application-example)
 
 ## Overview
- Parameters in locator string can be used as value or partial value of the attribute in parametric locator. Users can use the parametric locator in the automation project to replace the ones with the varaibles or data. This allows the locator to stand for series of elements, not only one target element.
+ Parameters in locator string can be used as value or partial value of the attribute in parametric locator. Users can use the parametric locator in the automation project to replace the ones with the varaibles or data. This allows the locator to match series of elements, instead of single target element..
 - dynamic value: {{varaible}}, the variable in locator
   
 formats as the following:  
@@ -29,7 +29,7 @@ How to use the parametric locator for web page and windows applciation? Here are
 ![sample1](../img/parametric_locator_sample1.png)  
 Locate the item in list, , the locator string is as  following after recording:  
 ![sample1](../img/parametric_locator_sample1_2.png)  
-Add parametes as following to loop over eahc item:   
+Add parametes as following to loop over each item:   
 ![sample1](../img/parametric_locator_sample1_3.png)  
 
 ```python

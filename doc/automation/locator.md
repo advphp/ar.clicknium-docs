@@ -23,13 +23,13 @@ First node `Application` contains attributes of the target application
 | filePath      |  the name of process file, can be ignored when locating element  |
 | version      |  clicknium locator schema version   |  
 
-The last node contains the atrtbiutes of the target UI element.
+The last node contains the attibutes of the target UI element.
 The nodes between `Application` and the last node are the parent or ancestor of the target element.
 
-The attributes in locator are used to identify the target element. The attribute value of the operator is `equals` as default, and we support the following operators:
+The attributes in locator are used to identify the target element. The operator of attribute value is `equals` by default, and we support the following operators:
 `equals`, `contains`, `startWith`, `endWith`.  
 The attributes only supporting wildword search, for example `name='test?_node*`. '?' match 1 character, '*' match 0 or more characters can use `contains`, `startWith`, `endWith`.  
-As Clicknium supports different automation technologies with tdiffrent tags and attributes collected in locator schema, here we list the attributes of each tag.  
+As Clicknium supports different automation technologies, shown as diffrent tags and attributes collection in locator schema, here we list the attributes of each tag.  
 
 ## UIA
 | Name      | equals | contains |startWith |endWith |
@@ -99,7 +99,7 @@ As Clicknium supports different automation technologies with tdiffrent tags and 
 
 ## Examples
 ### wildword locator
-Open the broser Edge, press `F12` to show developer tool sidebar, you can see the button 'Toggle device emulation'.
+Open Edge browser, press `F12` to show developer tool sidebar, you can see the button 'Toggle device emulation'.
 ![sample1](../img/locator_sample1_1.png)  
 If you record the locator of button 'Toggle device emulation', you can see the following locators.
 

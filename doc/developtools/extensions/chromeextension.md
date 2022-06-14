@@ -4,9 +4,9 @@
 
 > **Remarks:**
 >
->- Official version of Chrome is recommended while the green or the forum customized version of the Chrome is not.
+>- Official version of Chrome is recommended. The portable version or the forum customized version of the Chrome may not be well recommended.
 >- The minimum Chrome version is 60.
->- Before installing the extension, you may asked to close Chrome to make sure the relative jobs in processing are saved.
+>- Before installing the extension, please ensure the Edge is closed and no backend running msedge.exe process.
 
 ## Install
 

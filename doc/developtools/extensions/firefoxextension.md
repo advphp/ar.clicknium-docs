@@ -5,7 +5,7 @@
 > **Remarks:**
 >
 >- The minimum Firefox version is 56.
->- Before installing the extension, you may asked to close Firefox to make sure the relevant jobs in processing are saved.
+>- Before installing the extension, please ensure the Firefox is closed.
 
 ## Install
 
