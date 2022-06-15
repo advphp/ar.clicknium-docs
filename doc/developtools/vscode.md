@@ -10,8 +10,8 @@
   - [For Existing Project](#for-existing-project)
 
 ## Overview
-For python developer, if you use Visual Studio Code, ClickCorp provides clicknium extension that include all RPA features. 
-With the extension for Visual Studio Code, you can create python automation project, capture UI elements in browsers and in various desktop applications, easily edit UI locator, validate or recapture, run/debug the automation project, and provide centeral locator store management on the cloud.
+For python developers, ClickCorp provides clicknium extension that include all RPA features. 
+ You can create python automation project, capture UI elements in browsers and in various desktop applications, easily edit UI locator, validate or recapture, run/debug the automation project, and provide centeral locator store management on the cloud.
  Besides, Clicknium also improves writing code experience, such as providing IntelliSense, error hint, etc.
 
 ***Installation​***: Install through VS marketplace `Clicknium VS Code extension` or search clicknium in Visual Studio Code.  

@@ -35,7 +35,7 @@ Other general functions are also supported for SAP WinGUI element, such as click
 - sapgui/user_scripting_per_user
 - sapgui/user_scripting_set_readonly
   
-Notes: All changed values in `RZ11` are temporary and lost after the system restarts. For changes permanent, please contact SAP System Administrator.
+Notes: All changed values in transaction `RZ11` are temporary and lost after the system restarts. For changes permanent, please contact SAP System Administrator.
  
 
 ### Client Side Configuration
