@@ -93,3 +93,8 @@ Click `Validate` button.
 - After switching back to vscode, the corresponding Index property will be updated to the last Index and checked. 
   
   ![vscode-set-single-target-success](../../img/vscode-set-single-target-success.png)
+
+## Actions
+执行locator对应的事件函数。Terminal中会输出对应的执行结果。
+  ![vscode-locator-actions](../../img/vscode-locator-actions.png)
+ 
