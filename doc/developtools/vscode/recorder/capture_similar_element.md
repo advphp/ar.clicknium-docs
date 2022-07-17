@@ -29,10 +29,12 @@ sidebar_position: 3
 - Start with keyboard shortcut `Ctrl+F10` in code.   
 
 ## Capture wizard  
-Click on the `Capture Similar Element` icon, a wizard window will be displayed.
-- Capture similar element icon
-![capture similar element icon](../../../img/capture_similar_element_icon.png)
-- Wizard
+Click on the `Similar elements` button, a wizard window will be displayed.
+- Clikc  `Similar elements` button
+
+![similar elements button](../../../img/similar_elements_button.png)
+- Capture similar elements wizard 
+
 ![capture similar element wizard](../../../img/capture_similar_element_wizard.png)
 
 
@@ -40,15 +42,15 @@ Click on the `Capture Similar Element` icon, a wizard window will be displayed.
 
 1. Capture first element.   
 Move mouse cursor to one UI element of target list, it will highlight the element, then press `Ctrl+click` to capture the locator. The element image will be added to the wizard. A locator for this element will be generated accordingly and matched elements count for this locator will be displayed below the image.  
-![capture first element](../../../img/capture_first_similar_element.png)
+![capture first element](../../../img/capture_first_similar_element.png)  
 
 2. Capture another element.  
 Move mouse cursor to another element of the target list, then press `Ctrl+click` to capture it. The image will be added to wizard, and locator will be updated accordingly to reflect the captured elements. You may check if the matched elements count is expected to determine if more elements are needed to be captured.  
-![capture another element](../../../img/capture_another_similar_element.png)
+![capture another element](../../../img/capture_another_similar_element.png)  
 
-3. Save the locator.
+3. Save the locator.  
 Click `Save` to save the locator, the locator for matching similar elements will be added to the locator store.  
-![save similar locator](../../../img/save_similar_locator.png)
+![save similar locator](../../../img/save_similar_locator.png)  
 
 ## Highlight elements
 Highlight all matched elements for several seconds to determine if the generated locator is correct.  
@@ -62,21 +64,27 @@ Clear all the elements captured in the wizard window by clicking the right-top `
 ![clear similar elements](../../../img/clear_similar_elements.png)
 
 ## Remove element
-Remove one element in the wizard window.
-- Click the `Remove` icon
-![remove similar element](../../../img/remove_similar_element.png)
+Remove one element in the wizard window.  
+- Click the `Remove` icon  
+![remove similar element](../../../img/remove_similar_element.png)  
 
 ## Cancel capture
-Discard the current capture result and return to the main capture window.
-- Click the `Cancel` button
-![cancel capture similar element](../../../img/cancel_capture_similar_element.png)
+Discard the current capture result and return to the main capture window.  
+- Click the `Cancel` button  
+![cancel capture similar element](../../../img/cancel_capture_similar_element.png)  
 
 ## Recapture
 Recapture similar element can be used to update your single locator or similar locator.
-- Start from Visual Studio Code   
-![vscode recapture](../../../img/recorder_recapture_vscode.png)
-- Recapture winow   
-![recapture window from VSC](../../../img/recapture_window.png)
-- Capture similar element icon
-![capture similar element icon](../../../img/recapture_similar_element_icon.png)
-- [Start capture](#start-capture)
+1. Start from Visual Studio Code   
+![vscode recapture](../../../img/recorder_recapture_vscode.png)  
+2. Click `Similar elements` button  
+![recapture similar element button](../../../img/recapture_similar_element_button.png)  
+3. Capture first element.   
+Move mouse cursor to one UI element of target list, it will highlight the element, then press `Ctrl+click` to capture the locator. The element image will be added to the wizard. A locator for this element will be generated accordingly and matched elements count for this locator will be displayed below the image.  
+![capture first element](../../../img/capture_first_similar_element.png)  
+4. Capture another element.  
+Move mouse cursor to another element of the target list, then press `Ctrl+click` to capture it. The image will be added to wizard, and locator will be updated accordingly to reflect the captured elements. You may check if the matched elements count is expected to determine if more elements are needed to be captured.  
+![capture another element](../../../img/capture_another_similar_element.png)  
+5. Save the locator.  
+Click `Save` to save the locator, the locator for matching similar elements will be added to the locator store.    
+![save similar locator](../../../img/save_similar_locator.png)  
