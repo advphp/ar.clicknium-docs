@@ -25,15 +25,16 @@
 [![Discord](https://dcbadge.vercel.app/api/server/s7Pcev8Ad4?style=flat-square)](https://discord.gg/s7Pcev8Ad4)
 
 
-# Clicknium-docs
+# توثيق مكتبة كلكينيوم (Clicknium)
 
-[Clicknium](https://www.clicknium.com) is a next-generation GUI automation framework for various types of applications. It offers a simple and streamlined developer experience with high-level APIs for automating GUI applications and intelligent plug-ins. It gives you a fresh approach to creating your automation universe. Browser automation, web and desktop application testing, and site scraping bots are also supported.
-## Requirements
-|                     | Main version                 | 
+[Clicknium](https://www.clicknium.com) كلكينيوم هو إطار أتمتة واجهة المستخدم الرسومية من الجيل التالي لأنواع مختلفة من التطبيقات. إنه يوفر تجربة مطور بسيطة ومبسطة مع واجهات برمجة تطبيقات عالية المستوى لأتمتة تطبيقات واجهة المستخدم الرسومية (GUI) والمكونات الإضافية الذكية. يمنحك نهجا جديدا لإنشاء عالم الأتمتة الخاص بك. كما يتم دعم أتمتة متصفحات الانترنت واختبار تطبيقات الويب وبرامج سطح المكتب وروبوتات كشط المواقع.
+
+## المتطلبات
+|                     | الاصدار الاساسي                | 
 |---------------------|------------------------------|
 | Python              | 3.7, 3.8, 3.9, 3.10          | 
-| OS                  | Windows 11, 10 recommended, Windows 7 SP1 or above|
->Note: Windows 10 is the minimum supported Windows OS for DPI awareness.    
+| OS                  | ويندوز 11, 10 مستحسن, ويندوز 7 SP1 أو اعلى|
+>ملاحظة: ويندوز 10 هو الحد الأدنى من نظام التشغيل ويندوز المدعوم لمعرفة DPI.    
 
 ### Code Editor
 - Visual Studio Code
