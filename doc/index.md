@@ -1,46 +1,46 @@
 ---
 sidebar_position: 1
 ---
-# Quick Start
+# بداية سريعة
 
-## Prerequisites
-### System Requirements​
-|                     | Main version                 | 
+## المتطلبات الأساسية
+### متطلبات النظام​
+|                     | الاصدار الرئيسي                 | 
 |---------------------|------------------------------|
 | Python              | 3.7, 3.8, 3.9, 3.10          | 
-| OS                  | Windows 11, 10 recommended; Windows 7 SP1* or above|
+| نظام التشغيل                  | Windows 11, 10 recommended; Windows 7 SP1* أو اعلى |
 
->Note*: Windows 10 is the minimum supported Windows OS for DPI awareness.  
+>ملاحظة*: Windows 10 هو الحد الأدنى من نظام التشغيل Windows المدعوم لمعرفة DPI.  
 
-### Code Editor
-- Visual Studio Code
+### محرر الأكواد
+- فيجوال ستديو كود (Visual Studio Code)
 
-## Installation​
-### Set Up Clicknium Visual Studio Code Extension
-1. Install the [Extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) (or search `Clicknium` in Visual Studio Code Extension marketplace).  
+## التثبيت​
+### تثبيت ملحق كلكينيوم على فيجوال ستديو كود
+1. قم بتثبيت [الملحق](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) (أو ابحث عن Clicknium في قائمة ملحقات Visual Studio Code).  
 ![VSCExtensions](./img/vscextension.PNG)  
-2. Click `CLICKNIUM EXPLORER` in Visual Studio Code Activity Bar
-3. Follow the welcome page:
-    - Check the Python environment.
-    - Install Clicknium Python module, as well as `pip install clicknium`
-    - Select and install the browser extensions. Enable the extension after the installation. 
-    - Sign in to start for free.  
+2. اضغط على `CLICKNIUM EXPLORER` في شريط المحرر
+3. اتبع صفحة البداية:
+    - تحقق من بيئة بايثون.
+    - قم بتثبيت كلكينيوم عبر الأمر `pip install clicknium`
+    - حدد وثبّت ملحقات المتصفح، بما في ذلك Edge على الأقل. ثم قم بتمكين الملحق بعد التثبيت في المتصفح. 
+    - سجل الدخول مجانا للبدء.  
     
     ![welcomepage](./img/vscwelcome.PNG)
 
-_To Reopen Welcome Page: open the Command Palette: Ctrl+Shift+P, input `Clicknium:Welcome`_  
-_To Enable Edge Extension: Open Edge browser, type `edge://extensions/` into address bar and enable `Clicknium Recorder` extension as below:_
+_لإعادة فتح صفحة الترحيب: افتح لوحة الأوامر: Ctrl+Shift+P, أدخل `Clicknium:Welcome`_  
+_لتمكين ملحق Edge: افتح متصفح Edge ، واكتب `edge://extensions/` في شريط العنوان وقم بتمكين `Clicknium Recorder` على النحو التالي:_
 ![enable edge extension](./img/edge_extension_enable_on.png)  
 
-## Automation Sample
+## نموذج الأتمتة
 
-Get a sample script showing automation of web page and notepad.
+احصل على عينة نصية تعرض أتمتة صفحة الويب والمفكرة (Notepad).
 
-### Setup Sample Project
-- Click `Clicknium: Sample` in Welcome Page. Or invoke the Command Palette by pressing Ctrl+Shift+P and input `Clicknium: Sample`.
-- Choose a path to locate sample project.
+### مشروع مثال الإعداد
+- انقر فوق `Clicknium: Sample` في صفحة الترحيب. أو قم باستدعاء لوحة الأوامر عن طريق الضغط على Ctrl+Shift+P واكتب `Clicknium: Sample`.
+- اختر مسارًا لتحديد موقع نموذج المشروع.
 
-The sample.py contains two automation samples, one is Edge web automation, and the other is notepad automation.
+يحتوي sample.py على عينتين من الأتمتة ، أحدهما هو أتمتة الويب Edge ، والآخر هو أتمتة المفكرة (Notepad).
 
 ```python
 import subprocess
@@ -48,7 +48,7 @@ from time import sleep
 from clicknium import clicknium as cc, locator, ui
 
 def main():
-    # sample code to demo web automation and desktop application
+    # نموذج كود لعرض أتمتة الويب وبرنامج سطح المكتب
     tab = cc.edge.open("https://www.bing.com/")
     tab.find_element(
         locator.new_store.sample.bing.search_sb_form_q).set_text('clicknium')
@@ -63,19 +63,19 @@ if __name__ == "__main__":
     main()
 ```
 
-### Run The Sample
-In Visual Studio Code, open sample.py and press `Ctrl+F5` to run the script with following steps: 
-- Open a search engine page
-- Input a keyword and click search button
-- Open a notepad
-- Input text to notepad
+### تشغيل المثال
+في Visual Studio Code, افتح sample.py واضغط على `Ctrl+F5` لتشغيل السكربت. سوف تعمل: 
+- افتح صفحة محرك البحث
+- أدخل كلمة أساسية وانقر فوق زر البحث
+- افتح المفكرة ( notepad )
+- إدخال النص إلى المفكرة
 
-## Next
-Learn [how to start an automation project from zero](./tutorial/firstautomation.md).
-## Document Guidelines
-For more about Clicknium Visual Studio Code, please refer to [here](./tutorial/vscode/vscode.md).  
-You may need to refer [Clicknium Python package documents](./references/python/python.md) when writing code.  
-For more tools provided by Clicknium, please refer to:  
+## التالي
+تعرف على [كيفية بدء مشروع الأتمتة من الصفر](./tutorial/firstautomation.md).
+## المبادئ التوجيهية للوثائق
+لمزيد من المعلومات حول Clicknium Visual Studio Code ، يرجى الرجوع إلى [هنا](./tutorial/vscode/vscode.md).  
+قد تحتاج إلى الرجوع الى [مستندات حزمة بايثون Clicknium](./references/python/python.md) عند كتابة الكود.  
+لمزيد من الأدوات التي يوفرها Clicknium ، يرجى الرجوع إلى:  
 - [Clicknium Recorder](./tutorial/recorder/recorder.md).  
-- Clicknium Browser Extension: [Chrome](./tutorial/extensions/chromeextension.md), [Edge](./tutorial/extensions/edgeextension.md), [Firefox](./tutorial/extensions/firefoxextension.md).  
-- [Clicknium Java Extension](./tutorial/extensions/javaextension.md).  
+- Clicknium ملحق المتصفح: [Chrome](./tutorial/extensions/chromeextension.md), [Edge](./tutorial/extensions/edgeextension.md), [Firefox](./tutorial/extensions/firefoxextension.md).  
+- [Clicknium ملحق Java](./tutorial/extensions/javaextension.md).  
