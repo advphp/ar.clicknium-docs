@@ -1,24 +1,24 @@
-# Automation Concepts
+# مفاهيم الأتمتة
 
-## Overview
-In this section, we will illustrate the technology information about Clicknium automation, including how to leverage Clicknium automation technology to make RPA/automation project robust and easily edited, writed and maintained.  
-Clicknium automation integrate mulitple automation technologies in backgroup, Clicknium Recorder default use `Auto Detect` mode, it means Clicknium will automatically detect the application type, and choose appropriate background technology.  
-Clicknium defined unified [locator](./locator.md) schema to identify UI element, a locator stores the attributes of a UI element and its parents, for example, button on Windows application, input on web page or combobox on Java application can be stored as one locator.
+## ملخص
+في هذا القسم، سنوضح المعلومات التقنية حول أتمتة كلكينيوم، بما في ذلك كيفية الاستفادة من تقنية أتمتة كلكينيوم لجعل مشروع RPA/automation قويا وسهل التحرير والكتابة والصيانة.  
+تعمل أتمتة كلكينيوم على دمج تقنيات الأتمتة متعددة الوسائط في المجموعة الخلفية ، ويستخدم كلكينيوم Recorder افتراضيا وضع `الكشف تلقائيا` ، وهذا يعني أن كلكينيوم سيكتشف تلقائيا نوع التطبيق ، ويختار تقنية الخلفية المناسبة.  
+مخطط [locator](./locator.md) المعرف من كلكينيوم لتحديد عنصر واجهة المستخدم ، يقوم محدد المواقع بتخزين سمات عنصر واجهة المستخدم وأصوله ، على سبيل المثال ، يمكن تخزين الزر الموجود على تطبيق ويندوز أو الإدخال على صفحة الويب أو التحرير والسرد على تطبيق Java كمحدد موقع واحد.
 
-The following technologies are freqeuntly used:
-- [Clicknium Chrome/Edge/IE/Firefox](./web.md)：automation on many popular web browsers.
-- [Clicknium UIA](./uia.md): automation on most Windows/desktop application，based on Microsoft UI Automation.
-- [Clicknium IA](./ia.md): automation on Windows/desktop application, it can be supplement for UIA, on some electron&CEF applications or some legacy application, IA can be better.
-- [Clicknium Image Automation](./image.md): image automation can be used combied with above technologies.
-- [Clicknium Java](./java.md): automation on Java application, support Java 1.6 or above.
-- [Clicknium SAP](./sap.md): automation on SAP WinGUI, it requires the SAP WinGUI API scripting enabled.
+يتم استخدام التقنيات التالية بشكل متكرر:
+- [Clicknium Chrome/Edge/IE/Firefox](./web.md)： التشغيل الآلي على العديد من متصفحات الويب الشائعة.
+- [Clicknium UIA](./uia.md):التشغيل الآلي على معظم تطبيقات الويندوز/سطح المكتب ، استنادا إلى أتمتة واجهة مستخدم Microsoft.
+- [Clicknium IA](./ia.md): أتمتة على تطبيق الويندوز/سطح المكتب ، يمكن أن يكون مكملاً لـ UIA ، في بعض تطبيقات electron&CEF أو بعض التطبيقات القديمة ، يمكن أن يكون IA أفضل.
+- [Clicknium Image Automation](./image.md): يمكن استخدام أتمتة الصور مع التقنيات المذكورة أعلاه..
+- [Clicknium Java](./java.md): التشغيل الآلي على تطبيق Java ، يتم دعم Java 1.6 أو أعلى.
+- [Clicknium SAP](./sap.md): التشغيل الآلي على SAP WinGUI ، يتطلب تمكين البرمجة النصية لواجهة برمجة تطبيقات SAP WinGUI.
 
-## Articles
-- [Locator](./locator.md)
-- [UIA automation](./uia.md)
-- [Web automation](./web.md)
-- [Java automation](./java.md)
-- [SAP Automation](./sap.md)
-- [IA Automation](./ia.md)
-- [Image Automation](./image.md)
+## مقالات
+- [ المحدد - Locator](./locator.md) 
+- [أتمتة UIA - UIA automation](./uia.md)
+- [أتمتة الويب - Web automation](./web.md)
+- [أتمتة جافا - Java automation](./java.md)
+- [أتمتة SAP - SAP Automation](./sap.md)
+- [أتمتة IA - IA Automation](./ia.md)
+- [الأتمتة الصورية - Image Automation](./image.md)
 
