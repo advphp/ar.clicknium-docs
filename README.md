@@ -45,7 +45,7 @@
 
 ## التثبيت
 ### تثبيت ملحق كلكينيوم على فيجوال ستديو كود
-1. قم بتثبيت [الملحق] (https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) (أو ابحث عن `Clicknium` في قائمة ملحقات Visual Studio Code).  
+1. قم بتثبيت [الملحق](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) (أو ابحث عن `Clicknium` في قائمة ملحقات Visual Studio Code).  
 ![VSCExtensions](./doc/img/vscextension.PNG)  
 2. اضغط على `CLICKNIUM EXPLORER` في شريط المحرر
 3. اتبع صفحة البداية: 
