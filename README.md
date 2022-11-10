@@ -32,8 +32,8 @@
 ## المتطلبات
 |                     | الاصدار الاساسي                | 
 |---------------------|------------------------------|
-| Python              | 3.7, 3.8, 3.9, 3.10          | 
-| OS                  | ويندوز 11, 10 مستحسن, ويندوز 7 SP1 أو اعلى|
+| اصدار بايثون              | 3.7, 3.8, 3.9, 3.10          | 
+| اصدار النظام                  | Windows 11, 10 مستحسن, Windows 7 SP1 أو اعلى|
 >ملاحظة: ويندوز 10 هو الحد الأدنى من نظام التشغيل ويندوز المدعوم لمعرفة DPI.    
 
 ### محرر الأكواد
@@ -102,5 +102,5 @@ if __name__ == "__main__":
 تعرف على [كيفية بدء مشروع الأتمتة من الصفر](./doc/tutorial/firstautomation.md).
 
 ## اتصل بنا
-مرحبا بك في [Github Issue](https://github.com/clicknium/clicknium-docs/issues) او الانضمام [Clicknium Slack](https://clicknium.slack.com/) إذا كان لديك أي أسئلة.
+مرحبا بك في [Github Issue](https://github.com/clicknium/clicknium-docs/issues) او الانضمام على [Clicknium Slack](https://clicknium.slack.com/) إذا كان لديك أي أسئلة.
 _الدعم العربي بواسطة: خالد عكور_
