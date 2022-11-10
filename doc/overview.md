@@ -3,12 +3,12 @@ sidebar_position: 2
 ---
 
 # Overview
-[Clicknium](https://www.clicknium.com) is a next-generation GUI automation framework for various types of applications. It offers a simple and streamlined developer experience with high-level APIs for automating GUI applications and intelligent plug-ins. It gives you a fresh approach to creating your automation universe. Browser automation, web and desktop application testing, and site scraping bots are also supported.
+[كلكينيوم ](https://www.clicknium.com) هو إطار أتمتة واجهة المستخدم الرسومية من الجيل التالي لأنواع مختلفة من التطبيقات. إنه يوفر تجربة مطور بسيطة ومبسطة مع واجهات برمجة تطبيقات عالية المستوى لأتمتة تطبيقات واجهة المستخدم الرسومية (GUI) والمكونات الإضافية الذكية. يمنحك نهجا جديدا لإنشاء عالم الأتمتة الخاص بك. كما يتم دعم أتمتة متصفحات الانترنت واختبار تطبيقات الويب وبرامج سطح المكتب وروبوتات كشط المواقع.
 
-## Clicknium In Action
-- Follow [Quick Start](./index.md) to set up Clicknium and run the sample code.
-- Start [First Clicknium Automation Project](./tutorial/firstautomation.md) from zero. 
-- Dive in [Tutorial](./tutorial/tutorial.md) to walk through the fundamental of Clicknium concepts, tools, and their usage.
+## كلكينيوم في العمل
+- اتبع [البدء السريع](./index.md) لإعداد كلكينيوم وتشغيل نموذج الكود.
+- ابدأ [أول مشروع أتمتة كلكينيوم](./tutorial/firstautomation.md) من الصفر. 
+- تعمّق في [التعليمات](./tutorial/tutorial.md) للتعرّف على أساسيات مفاهيم كلكينيوم وأدواتها واستخدامها.
     - [Clicknium VS Code Extension](./tutorial/vscode/vscode.md)
     - [Clicknium Locator](./tutorial/locator.md)
     - [Clicknium Locator Store](./tutorial/locatorstore.md)
@@ -16,9 +16,9 @@ sidebar_position: 2
     - [Clicknium Project](./tutorial/clickniumproject.md)
     - [Clicknium Automation Extensions](./tutorial/extensions/extensions.md)
 
-## Automation Concepts
-- The key technology about [Clicknium Automation](./concepts/concepts.md).
+## مفاهيم الأتمتة
+- التكنولوجيا الرئيسية حول [أتمتة كلكينيوم](./concepts/concepts.md).
 
-## Clicknium API Reference
+## مرجع كلكينيوم API
 - [Clicknium Python API](./references/python/python.md)
 
