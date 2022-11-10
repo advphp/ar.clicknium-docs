@@ -3,82 +3,85 @@ sidebar_position: 6
 sidebar_label: FAQ
 ---
 
-# Frequently Asked Questions
+# الاسئلة الشائعة
 
-## Login Failure
+## فشل تسجيل الدخول (Login Failure)
 
-When you try to login and got error: `Uncaught SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.` This exception is thrown when the "Block third-party cookies and site data" checkbox is set in Content Settings.  
-To find the setting, open Chrome settings, click `Privacy and security` in navigation bar, click `Cookies and other site data`, and view the third item under General settings.
+عند محاولة تسجيل الدخول وحصلت على خطأ: `Uncaught SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.`  يتم طرح هذا الاستثناء عند تعيين مربع الاختيار "حظر ملفات تعريف الارتباط وبيانات الموقع للأطراف الثالثة" في إعدادات المحتوى.  
+للعثور على الإعداد ، افتح إعدادات Chrome ، وانقر على `Privacy and security`  في شريط التنقل ، انقر على `Cookies and other site data` ، واعرض العنصر الثالث ضمن إعدادات عامة.
 ![pic](./img/block3rdcookies.PNG)  
-If this setting is checked, third-party scripts cookies are disallowed and access to localStorage may result in thrown SecurityError exceptions.
+إذا تم تحديد هذا الإعداد ، فلن يُسمح بملفات تعريف ارتباط البرامج النصية للجهات الخارجية وقد يؤدي الوصول إلى localStorage إلى استثناءات SecurityError.
 
 ## Can not automate browser running instances with different user profiles
 
-If you encountered the subsequent issue when recording:
+
+إذا واجهت المشكلة اللاحقة عند التسجيل:
+
 
 ![multiple user profile error](img/faq_multiple_profile_error.png)
 
-This is due to the possibility that you have started several Chrome browser windows using different user profiles. Every Chrome browser window's user profile is visible in the top-right corner.
+هذا يرجع إلى احتمال أن تكون قد بدأت العديد من نوافذ متصفح Chrome باستخدام ملفات تعريف مستخدم مختلفة. يظهر كل ملف تعريف مستخدم لنافذة متصفح Chrome في الزاوية العلوية اليمنى.
 
 ![multiple user profile](img/faq_mulitple_profile2.png)
 
-You can fix this issue by first stopping Clicknium Recorder, closing all open browser tabs, opening the browser solely in a single user profile, and then starting a new recording.
+يمكنك حل هذه المشكلة عن طريق إيقاف Clicknium Recorder أولاً ، وإغلاق جميع علامات تبويب المتصفح المفتوحة ، وفتح المتصفح فقط في ملف تعريف مستخدم واحد ، ثم بدء تسجيل جديد.
 
 ## This element is not similar to previous elements. Please capture it again
 
-If you encountered the subsequent issue when recording similar elements, 
+إذا واجهت المشكلة اللاحقة عند تسجيل عناصر مماثلة، 
 
 ![similar element error](img/faq_similar_elelemt_error.png)
 
-The new recorded locator being different from the old one should be the primary factor. For example:
+يجب أن يكون محدد الموقع المسجل الجديد مختلفًا عن القديم هو العامل الأساسي. فمثلا:
 
-- They are elements of various types, for example: one with tag "a" and the other with tag "div".
-- They are under different iframes.
 
-For more information, please refer to [Capture similar elements](tutorial/recorder/capture_similar_elements.md)
+- وهي عناصر من أنواع مختلفة ، على سبيل المثال: أحدهما بعلامة "a" والآخر بعلامة "div".
+- هم تحت إطارات مضمنة مختلفة.
+
+لمزيد من المعلومات ، يرجى الرجوع إلى [التقاط عناصر مماثلة](tutorial/recorder/capture_similar_elements.md)
 
 ## Browser extension for Chrome is not turned on, do you want to turn it on now?
 
-If you encountered the subsequent issue when recording elements on one browser page,
+إذا واجهت المشكلة اللاحقة عند تسجيل العناصر على صفحة متصفح واحدة،
 
 ![install extension](img/faq_install_extension_error.png)
 
-The main reason should be Clicknium browser extension is not enabled, you can click 'Yes', browser extension page will be opened, you can enable it: 
+يجب أن يكون السبب الرئيسي هو عدم تمكين ملحق متصفح Clicknium ، يمكنك النقر على "Yes" ، وسيتم فتح صفحة ملحق المتصفح ، ويمكنك تمكينها:
 
 ![install extension](img/chrome_extension_enable_page.png)
 
-And refresh the web page or re-open the browser window, and record once more.
+وقم بتحديث صفحة الويب أو أعد فتح نافذة المتصفح ، وقم بالتسجيل مرة أخرى.
 
 ## ModuleNotFoundError: No module named 'tkinter'
 
-The following error message may appear when you're running or packaging project.
+قد تظهر رسالة الخطأ التالية عند تشغيل المشروع أو حزمه.
 
 ![](img/pack_error_1.png)
 
-Get the Python version that the project needs by opening the clicknium.yaml file in the project folder.
+احصل على إصدار بايثون الذي يحتاجه المشروع عن طريق فتح ملف clicknium.yaml في مجلد المشروع.
 
 ![](img/pack_error_2.png)
 
-First, Check whether the correct version of Python is already installed on your computer.
+أولاً ، تحقق مما إذا كان الإصدار الصحيح من بايثون مثبتًا بالفعل على جهاز الكمبيوتر الخاص بك.
 
 ![](img/pack_error_3.png)
 
-If it's already installed, use "Python -m tkinter" to verify whether tkinter existing.
+إذا كان مثبتًا بالفعل ، فاستخدم "Python -m tkinter" للتحقق مما إذا كانت tkinter موجودة.
 
 ![](img/pack_error_4.png)
 
-Otherwise, reinstall Python and check the "tcl/tk and IDLE" box.
+بخلاف ذلك ، أعد تثبيت بايثون وحدد المربع "tcl / tk and IDLE".
 
 ![](img/pack_error_5.png)
 
-If Python is not installed, download and install the appropriate version.
+إذا لم يتم تثبيت بايثون ، فقم بتنزيل الإصدار المناسب وتثبيته.
 
-Open folder "%LOCALAPPDATA%\Clicknium\Envs" and then locate the project name that corresponds to the Python virtual environment folder.
+افتح المجلد "%LOCALAPPDATA%\Clicknium\Envs" ثم حدد موقع اسم المشروع الذي يتوافق مع مجلد بيئة بايثون الافتراضية.
 
 ![](img/pack_error_6.png)
 
-In the "pyvenv.cfg" file, change "home" to the Python installation path
+في ملف "pyvenv.cfg" ، قم بتغيير "home" إلى مسار تثبيت بايثون
 
 ![](img/pack_error_7.png)
 
-The project will function normally,  you can run it again in Visual Studio Code and package it.
+سيعمل المشروع بشكل طبيعي ، يمكنك تشغيله مرة أخرى في Visual Studio Code وحزمه.
