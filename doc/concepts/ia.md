@@ -2,14 +2,14 @@
 sidebar_position: 6
 sidebar_label: IA Automation 
 ---
-# IA Automation
-## Overview
+# أتمتة IA 
+## ملخق
 
-Clicknium IA automation is based on Microsoft Active Accessibility(MSAA), supply recording function, generate locator and all operations on one element.  
-As MSAA is now considered a legacy API, so we treat IA as supplement of UIA, on some electron&CEF applications or some legacy application, IA can be better. If you want to use IA during recording, you need manually choose IA technology first.
+تعتمد أتمتة كلكينيوم IA على Microsoft Active Accessibility (MSAA) ، وتزويد وظيفة التسجيل ، وإنشاء محدد المواقع وجميع العمليات على عنصر واحد.
+نظرًا لأن MSAA يعتبر الآن واجهة برمجة تطبيقات قديمة ، لذلك نتعامل مع IA كمكمل لـ UIA ، في بعض تطبيقات الإلكترون و CEF أو بعض التطبيقات القديمة ، يمكن أن يكون IA أفضل. إذا كنت ترغب في استخدام IA أثناء التسجيل ، فأنت بحاجة إلى اختيار تقنية IA يدويًا أولاً.
 
-## Locator attributes
-You can get [locator](./locator.md) concept first, for IA automation, the attributes defined are as the following:
+## سمات المحدد (Locator attributes)
+يمكنك الحصول على مفهوم  [المحدد](./locator.md) أولاً ، بالنسبة لأتمتة IA ، فإن السمات المحددة هي كما يلي:
 
 | Name      | equals | contains |startWith |endWith |regex |
 | ----------- | ----------- |----------- |----------- |----------- |----------- |
@@ -24,7 +24,7 @@ You can get [locator](./locator.md) concept first, for IA automation, the attrib
 | Tag |  <font color="Green"><B>Yes</B></font>   |<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|
 | Index |  <font color="Green"><B>Yes</B></font>   |<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|
 
-## Locator samples
+## عينات المحدد (Locator)
 
 - github desktop 'open in visual studio code' button
 ```xml
@@ -72,18 +72,18 @@ You can get [locator](./locator.md) concept first, for IA automation, the attrib
 <IA className="Chrome_WidgetWin_1" defaultAction="click" name="History" role="tabItem" />
 ```
 
-## IA element properties
-By [find_element](../references/python/globalfunctions/find_element.md) on one IA locator, you can get one IA element, you can get properties of the element by [get_property](../references/python/uielement/get_property.md), Clicknium IA support the following properties:
+## خصائص عنصر IA
+من خلال [find_element](../references/python/globalfunctions/find_element.md)  على محدد موقع IA واحد ، يمكنك الحصول على عنصر IA واحد ، يمكنك الحصول على خصائص العنصر عن طريق [get_property](../references/python/uielement/get_property.md)، يدعم كلكينيوم IA الخصائص التالية:
 
 
-| Name      | Description |
+| الاسم      | الوصف |
 | ----------- | ----------- |
-| Name      |  the name of the user interface      |
-| IsEnabled  | whether the element is enabled in the user interface|
-| AccessKey   |  a string containing the access key character for the element|
-| BoundingRectangle   | the coordinates of the rectangle that completely encloses the element|
-| ProcessId   | the process identifier (ID) of the element|
-| Description   |  description of the element|
-| AcceleratorKey   | a string containing the accelerator key combinations for the element|
-| HelpText   |the help text of the element|
-| ControlType | the ControlType of the element.|
+| Name      |  اسم واجهة المستخدم      |
+| IsEnabled  | ما إذا كان العنصر ممكّنًا في واجهة المستخدم|
+| AccessKey   |  سلسلة تحتوي على مفتاح الوصول للعنصر|
+| BoundingRectangle   | إحداثيات المستطيل الذي يحيط بالعنصر بالكامل|
+| ProcessId   | معرف العملية (ID) للعنصر|
+| Description   |  وصف العنصر|
+| AcceleratorKey   | سلسلة تحتوي على مجموعات مفاتيح التسريع للعنصر|
+| HelpText   |نص التعليمات الخاص بالعنصر|
+| ControlType | نوع التحكم للعنصر.|
