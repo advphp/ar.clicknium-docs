@@ -44,18 +44,17 @@ sidebar_label: Image Automation
 | selectionRect | تخزين منطقة الاختيار أثناء التسجيل. لا حاجة لتعديل القيمة  |<font color="Green"><B>نعم</B></font>   |<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|
 | timeout | حدد الحد الأقصى للفاصل الزمني في مطابقة الصورة ، الافتراضي هو 5000 مللي ثانية |<font color="Green"><B>نعم</B></font>   |<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|
 
-the definition of methods:
-- HighestAccuracy: compare the images found in whole Windows screen
-- InRegionHighestAccuracy: compare the images found in anchor element area
-- OutRegionHighestAccuracy: comapre the images found out of the anchor element area
+تعريف الطرق::
+- HighestAccuracy: مقارنة الصور الموجودة في شاشة الويندوز بأكملها
+- InRegionHighestAccuracy: مقارنة الصور الموجودة في منطقة عنصر الربط
+- OutRegionHighestAccuracy: مقارنة الصور التي تم العثور عليها من منطقة عنصر الربط
 
-`method` attributes are automatically set based on the selection area and corresponding anchor area in the process of recording 
-if the selection area is inside the anchor element area, set to 'InRegionHighestAccuracy';  
-if the selection area intersects with the anchor element area, set to 'HighestAccuracy';
-if the selection area is outside the anchor element area, set to 'OutRegionHighestAccuracy';
+`method` يتم تعيين السمات تلقائيًا بناءً على منطقة التحديد ومنطقة الارتساء المقابلة في عملية التسجيل إذا كانت منطقة التحديد داخل منطقة عنصر الربط ، فاضبط على 'InRegionHighestAccuracy'.  
+إذا كانت منطقة التحديد تتقاطع مع منطقة عنصر الربط ، فاضبط على 'HighestAccuracy'.
+إذا كانت منطقة التحديد خارج منطقة عنصر الربط، فاضبط على 'OutRegionHighestAccuracy'.
 
-## Use image locator in project
-Image locator can be used in the same way as other locators, for example  
+## استخدام محدد الصورة في المشروع
+يمكن استخدام محدد موقع الصور بنفس طريقة استخدام محددات المواقع الأخرى ، على سبيل المثال  
 ```python
 from clicknium import clicknium as cc, locator, ui
 
@@ -67,7 +66,7 @@ driver.find_element(locator.chrome.img1).click
 ui(locator.notepad.menuitem).click()
 ```  
 
-The following functions support image locator:
+تدعم الوظائف التالية محدد موقع الصورة:
 - click
 - double_click
 - mouse_up
@@ -78,7 +77,7 @@ The following functions support image locator:
 - highlight
 - hover
 - send_hotkey
-- set_text (parameter `by` should be `sendkey-after-click`)
+- set_text (العامل `by` يجب ان يكون `sendkey-after-click`)
 
-## Example
-If the application or the target UI element can not be located by other automation technologies when the area image is stable, users can try image locator.
+## مثال
+إذا تعذر تحديد موقع التطبيق أو عنصر واجهة المستخدم الهدف بواسطة تقنيات التشغيل الآلي الأخرى عندما تكون صورة المنطقة مستقرة ، فيمكن للمستخدمين تجربة محدد موقع الصورة.
