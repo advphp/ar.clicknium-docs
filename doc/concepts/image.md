@@ -2,47 +2,47 @@
 sidebar_position: 7
 sidebar_label: Image Automation
 ---
-# Image Automation
+# أتمتة الصور Image Automation
 
-## Overview
-Clicknium automation stask with many functions supports image automation.
-Clicknium locator schema is designed for extension in Windows application locator, Java application locator and image locator.
+## ملخص
+تدعم وظيفة أتمتة كلكينيوم مع العديد من الوظائف التي تدعم أتمتة الصور.
+تم تصميم مخطط محدد موقع كلكينيوم للتمديد في محدد مواقع برامج الويندوز ومحدد موقع برامج Java ومحدد موقع الصور. (locator)
 
-## Capture image locator
-Open a project in Visual Studio Code by pressing `Ctrl + F10`, or clicking the button `Capture` to invoke Clicknium recorder.  
-![recorder button](./../img/start_recorder_from_vscode.png "locator recorder button")  
+## التقاط موقع صورة محدد Capture image locator
+افتح مشروعا في Visual Studio Code بالضغط على `Ctrl + F10`، أو النقر فوق الزر `Capture` لاستدعاء مسجل كلكينيوم.
+![recorder button](./../img/start_recorder_from_vscode.png "زر مسجل الموقع")  
 
-- Hover the mouse over the element to highlight it.  
-- Press `Ctrl` and click the element to capture its locator.  
-- Press `Shift` and select one area with the mouse to capture the image and it will be stored as image in locator.  
+- مرر مؤشر الماوس فوق العنصر لتحديده.   
+- اضغط على `Ctrl` وانقر على العنصر لالتقاط محدد موقعه.  
+- اضغط على `Shift` وحدد منطقة واحدة بالماوس لالتقاط الصورة وسيتم تخزينها كصورة في محدد المواقع. 
 
 ![recorder helper](./../img/recorder_help.png)   
 
-For example  
-- Choose the target element  
+فمثلا 
+- اختر العنصر الهدف
 
 ![recorder sample1](./../img/image_locator_sample1_1.png)  
-- Press `Shift` and drag to select an area  
+- اضغط على `Shift` واسحب لتحديد منطقة  
 
 ![recorder sample1](./../img/image_locator_sample1_2.png)  
 
-You will get the locator as follows:   
+سوف تحصل على محدد المواقع على النحو التالي:   
 ![recorder sample1](./../img/image_locator_sample1_3.png)  
 
-Image locator contains two parts.  
-The first part is anchor element. In the process of running, firstly find the anchor element, then capture anchor image depending on the image method attributes, and find the target image in anchor image by image matching algorithm.
-The second part is image, supporting the following attributes:  
+يحتوي محدد الصورة على جزأين.
+الجزء الأول هو عنصر الارتساء. في عملية التشغيل ، ابحث أولاً عن عنصر الارتساء ، ثم التقط صورة المرساة اعتمادًا على سمات طريقة الصورة ، وابحث عن الصورة المستهدفة في صورة الإرساء عن طريق خوارزمية مطابقة الصورة.
+الجزء الثاني عبارة عن صورة تدعم السمات (attributes) التالية:  
 
-| Name      | Description | equals | contains |startWith |endWith |
+| الاسم      | الوصف | يساوي | يحتوي |أبدا ب |انتهت ب |
 | ----------- | ----------- |----------- |----------- |----------- |----------- |
-| accuracy | The minimum similarity between the target image and the one in image locator. It is useful when the image to be found is slightly different from the one in the locator. Measurement unit is from 0 to 1 with default value 0.75. |<font color="Green"><B>Yes</B></font>   |<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|
-| dpi |  we recommend the DPI settings of Windows OS in the process of running is the same as the ones when recording|<font color="Green"><B>Yes</B></font>   |<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|
-| method | enum values define the algorithm of image matching. The value is autoset when recording | <font color="Green"><B>Yes</B></font> |<font color="Red"><B>No</B></font>   |<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|
-| filePath | the selection area of image recording, used in the process of image matching |<font color="Green"><B>Yes</B></font>   |<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|
-| matchIndex | which will be selected when more than one area is found during image matching, default is 0, it means the first matching area |<font color="Green"><B>Yes</B></font>   |<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|
-| elementRect | store the anchor element area during recording. No need to modify the value |<font color="Green"><B>Yes</B></font>   |<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|
-| selectionRect | store the selection area during recording. No need to modify the value  |<font color="Green"><B>Yes</B></font>   |<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|
-| timeout |Specify the maximum time interval in image matching, default is 5000 milliseconds  |<font color="Green"><B>Yes</B></font>   |<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|<font color="Red"><B>No</B></font>|
+| accuracy | الحد الأدنى من التشابه بين الصورة المستهدفة والصورة الموجودة في محدد الصورة. يكون مفيدًا عندما تكون الصورة التي يتم العثور عليها مختلفة قليلاً عن تلك الموجودة في محدد المواقع. وحدة القياس من 0 إلى 1 بقيمة افتراضية 0.75. |<font color="Green"><B>نعم</B></font>   |<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|
+| dpi |  نوصي بأن تكون إعدادات DPI لنظام التشغيل ويندوز في عملية التشغيل هي نفس الإعدادات عند التسجيل|<font color="Green"><B>نعم</B></font>   |<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|
+| method | تحدد قيم التعداد خوارزمية مطابقة الصورة. يتم ضبط القيمة تلقائيًا عند التسجيل | <font color="Green"><B>نعم</B></font> |<font color="Red"><B>لا</B></font>   |<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|
+| filePath | منطقة اختيار تسجيل الصور ، المستخدمة في عملية مطابقة الصور |<font color="Green"><B>نعم</B></font>   |<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|
+| matchIndex | والتي سيتم تحديدها عند العثور على أكثر من منطقة واحدة أثناء مطابقة الصورة ، الافتراضي هو 0 ، وهذا يعني منطقة المطابقة الأولى |<font color="Green"><B>نعم</B></font>   |<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|
+| elementRect | قم بتخزين منطقة عنصر الربط أثناء التسجيل. لا حاجة لتعديل القيمة |<font color="Green"><B>نعم</B></font>   |<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|
+| selectionRect | تخزين منطقة الاختيار أثناء التسجيل. لا حاجة لتعديل القيمة  |<font color="Green"><B>نعم</B></font>   |<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|
+| timeout | حدد الحد الأقصى للفاصل الزمني في مطابقة الصورة ، الافتراضي هو 5000 مللي ثانية |<font color="Green"><B>نعم</B></font>   |<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|<font color="Red"><B>لا</B></font>|
 
 the definition of methods:
 - HighestAccuracy: compare the images found in whole Windows screen
